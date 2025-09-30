@@ -1,1 +1,41 @@
+# Environment Variables (EmailJS credentials)
+.env
+
+# Images (optional - remove if you want to include images)
 *.jpg
+*.jpeg
+*.png
+*.gif
+
+# System files
+.DS_Store
+Thumbs.db
+personal-info.txt
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if any)
+node_modules/
+
+# Build outputs
+dist/
+build/

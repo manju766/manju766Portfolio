@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html l   <!-- Simple Professional Favicon -->
+  <link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='15' fill='%23667eea'/%3E%3Ctext x='50' y='70' font-family='Arial,sans-serif' font-size='60' font-weight='bold' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E" type="image/svg+xml"/>!-- Professional Favicon -->
+  <link rel="icon" id="favicon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2215%22 fill=%22%23072c57%22/><text x=%2250%22 y=%2265%22 font-family=%22Arial,sans-serif%22 font-size=%2250%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%23ffffff%22>M</text></svg>"/>g="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mallikarjun Malli | Full Stack Developer & L1 Support Engineer Portfolio</title>
+  <title>Mallikarjun Malli | Portfolio</title>
   <meta name="description" content="Portfolio of Mallikarjun Malli - BCA graduate and aspiring Full Stack Developer specializing in MERN stack, L1 support, and web development. View my projects, skills, and experience.">
   <meta name="keywords" content="Mallikarjun Malli, Full Stack Developer, MERN Stack, React.js, Node.js, JavaScript, L1 Support Engineer, Web Developer, Portfolio">
   <meta name="author" content="Mallikarjun Malli">
@@ -22,8 +24,8 @@
   <meta name="twitter:description" content="BCA graduate and aspiring Full Stack Developer specializing in MERN stack development.">
   <meta name="twitter:image" content="https://manju766.github.io/portfolio/me2.jpg">
   
-  <!-- Favicon -->
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f393.svg"/>
+  <!-- Animated Favicon -->
+  <link rel="icon" id="favicon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>�</text></svg>"/>
   
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +36,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/8b7c8e2e7c.js" crossorigin="anonymous" async></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/8b7c8e2e7c.js" crossorigin="anonymous"></script>
+  
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css"/>
@@ -46,7 +52,7 @@
     "@type": "Person",
     "name": "Mallikarjun Malli",
     "jobTitle": "Full Stack Developer",
-    "email": "mallikarjunmalli51946@gmail.com",
+    "email": "mallikarjunmalli.work@gmail.com",
     "url": "https://manju766.github.io/portfolio",
     "sameAs": [
       "https://github.com/manju766",
@@ -61,8 +67,11 @@
   }
   </script>
 </head>
-<body>
+<body class="dark">
   <header>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
     <nav>
       <a href="#home" class="logo">
         <div class="logo-icon">
@@ -78,8 +87,8 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="theme-toggle" aria-label="Toggle theme">
-        <i class="fas fa-moon"></i>
+      <button class="theme-toggle" aria-label="Toggle theme" style="background: white !important; color: #0369a1 !important; border: 2px solid #0369a1 !important; z-index: 999 !important;">
+        <i class="fas fa-sun" style="color: #0369a1 !important; font-size: 1.1rem !important;"></i>
       </button>
     </nav>
   </header>
@@ -89,11 +98,17 @@
     <section id="home" class="hero">
       <div class="hero-content">
         <h1 class="gradient-text">Mallikarjun Malli</h1>
-        <p class="subtitle typing">Full Stack Developer | L1 Support Engineer</p>
+        <p class="subtitle typing">Developer Intern | Committed to Continuous Learning</p>
         <div class="hero-links">
-          <a href="https://github.com/manju766" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/mallikarjun-malli-766" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:mallikarjunmalli51946@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/manju766" target="_blank" class="hero-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/mallikarjun-malli-766" target="_blank" class="hero-icon" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:mallikarjunmalli.work@gmail.com" class="hero-icon" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
         <a href="#contact" class="cta-btn">Hire Me</a>
         <a href="resume.html" class="cta-btn outline" target="_blank">View Resume</a>
@@ -106,11 +121,11 @@
       <div class="about-content">
         <div class="about-text">
           <p>
-            Motivated BCA graduate with strong foundational knowledge of computer applications, eager to contribute as an L1 support engineer. Skilled in troubleshooting, technical support, and customer communication. Seeking to leverage academic and project experience to provide effective IT support for users and teams.
+            Motivated BCA graduate with a strong foundation in computer applications, aspiring Developer Intern with a passion for learning new technologies and building impactful solutions. Enthusiastic about working on real-world projects, improving technical skills, and contributing effectively to innovative teams. Committed to continuous growth and adapting quickly to emerging industry trends.
           </p>
           <ul class="about-list">
             <li><b>Location:</b> Hubli, Karnataka</li>
-            <li><b>Email:</b> mallikarjunmalli51946@gmail.com</li>
+            <li><b>Email:</b> mallikarjunmalli.work@gmail.com</li>
             <li><b>GitHub:</b> <a href="https://github.com/manju766" target="_blank">manju766</a></li>
           </ul>
         </div>
@@ -128,38 +143,38 @@
           <h3><i class="fas fa-code"></i> Programming Languages</h3>
           <div class="skill-item">
             <span>Java (Core)</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="55"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="35"></div></div>
           </div>
           <div class="skill-item">
             <span>JavaScript</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="50"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="30"></div></div>
           </div>
           <div class="skill-item">
             <span>C++</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="50"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="30"></div></div>
           </div>
           <div class="skill-item">
             <span>Python</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="30"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="20"></div></div>
           </div>
         </div>
         <div class="skill-card">
           <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
           <div class="skill-item">
             <span>HTML5 & CSS3</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="90"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="70"></div></div>
           </div>
           <div class="skill-item">
             <span>React.js</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="75"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="35"></div></div>
           </div>
           <div class="skill-item">
             <span>Responsive Design</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="85"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="45"></div></div>
           </div>
           <div class="skill-item">
             <span>Bootstrap</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="70"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="40"></div></div>
           </div>
         </div>
         <div class="skill-card">
@@ -170,7 +185,7 @@
           </div>
           <div class="skill-item">
             <span>MySQL(Basics)</span>
-            <div class="skill-bar"><div class="skill-progress" data-skill="35"></div></div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="25"></div></div>
           </div>
           <div class="skill-item">
             <span>Git & GitHub</span>
@@ -203,7 +218,7 @@
             <a href="https://github.com/manju766/Course_Store" target="_blank" class="project-link">
               <i class="fab fa-github"></i> View Code
             </a>
-            <a href="#" target="_blank" class="project-link">
+            <a href="https://coursestore-kqr5.onrender.com/" target="_blank" class="project-link">
               <i class="fas fa-external-link-alt"></i> Live Demo
             </a>
           </div>
@@ -228,10 +243,10 @@
             </ul>
           </div>
           <div class="project-links">
-            <a href="https://github.com/manju766/job-description-matcher" target="_blank" class="project-link">
+            <a href="https://github.com/manju766/Job_Decription_Matcher" target="_blank" class="project-link">
               <i class="fab fa-github"></i> View Code
             </a>
-            <a href="#" target="_blank" class="project-link">
+            <a href="https://job-decription-matcher.onrender.com/" target="_blank" class="project-link">
               <i class="fas fa-external-link-alt"></i> Live Demo
             </a>
           </div>
@@ -329,7 +344,7 @@
               <i class="fas fa-envelope"></i>
               <div>
                 <h4>Email</h4>
-                <a href="mailto:mallikarjunmalli51946@gmail.com">mallikarjunmalli51946@gmail.com</a>
+                <a href="mailto:mallikarjunmalli.work@gmail.com">mallikarjunmalli.work@gmail.com</a>
               </div>
             </div>
             <div class="contact-method">
@@ -338,6 +353,17 @@
                 <h4>Location</h4>
                 <span>Hubli, Karnataka, India</span>
               </div>
+            </div>
+          </div>
+          
+          <!-- Animated Call-to-Action Text -->
+          <div class="contact-cta">
+            <div class="cta-text">
+              <span class="cta-sub">JUST FILL THE FORM</span>
+              <span class="cta-sub">I WILL REACH OUT TO YOU</span>
+            </div>
+            <div class="cta-arrow">
+              <i class="fas fa-arrow-right"></i>
             </div>
           </div>
         </div>
@@ -372,7 +398,7 @@
       <span>&copy; <span id="year"></span> Mallikarjun Malli</span>
       <span class="footer-links">
         <a href="https://github.com/manju766" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/mallikarjun-malli-766" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/mallikarjun-malli-91a5572b5/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </span>
     </div>
   </footer>

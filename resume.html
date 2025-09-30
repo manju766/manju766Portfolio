@@ -1,46 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mallikarjun Malli - Resume</title>
+    
+    <!-- Professional Favicon -->
+    <link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='15' fill='%23667eea'/%3E%3Ctext x='50' y='70' font-family='Arial,sans-serif' font-size='60' font-weight='bold' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E" type="image/svg+xml"/>
+    
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .header { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; }
-        .section { margin: 20px 0; }
-        .section h3 { color: #333; border-bottom: 1px solid #ccc; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        
+        .resume-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header { 
+            text-align: center; 
+            border-bottom: 3px solid #667eea; 
+            padding-bottom: 20px; 
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .header .title {
+            font-size: 1.2rem;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            color: #555;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section { 
+            margin: 25px 0; 
+        }
+        
+        .section h3 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #ecf0f1; 
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .education-item, .project-item {
+            margin-bottom: 15px;
+            padding: 12px 0;
+        }
+        
+        .education-item h4, .project-item h4 {
+            color: #34495e;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .education-details, .project-details {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .grade {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        
+        .skill-category p {
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .certification {
+            background: #e8f4fd;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            color: #2c3e50;
+        }
+        
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Mallikarjun Malli</h1>
-        <p>Full Stack Developer | L1 Support Engineer</p>
-        <p>Email: mallikarjunmalli51946@gmail.com | Phone: 8431031711</p>
-        <p>GitHub: github.com/manju766 | Location: Hubli, Karnataka</p>
-    </div>
-    
-    <div class="section">
-        <h3>Education</h3>
-        <p><strong>Bachelor of Computer Application</strong> - KLE Technological University, Hubli (2023-2026) - CGPA: 7.4</p>
-        <p><strong>Pre-University Course (PUC)</strong> - IBMR College of Commerce, Hubli (2021-2023) - 75%</p>
-    </div>
-    
-    <div class="section">
-        <h3>Skills</h3>
-        <p><strong>Programming:</strong>Fundamentals of Java (Core), C++, JavaScript, Python</p>
-        <p><strong>Web Development:</strong> HTML, CSS, React.js(Basics)</p>
-        <p><strong>Database:</strong> Fundalments of MySQL, MongoDB</p>
-        <p><strong>Tools:</strong> GitHub, VS Code, Postman</p>
-    </div>
-    
-    <div class="section">
-        <h3>Projects</h3>
-        <p><strong>Course Selling Web App (MERN Stack)</strong> - Full-stack application with user authentication and payment integration</p>
-        <p><strong>Job Portal (MERN Stack)</strong> - Platform for recruiters and job seekers with application tracking</p>
-        <p><strong>Personal Portfolio Website</strong> - Responsive website showcasing projects and skills</p>
-    </div>
-    
-    <div class="section">
-        <h3>Certifications</h3>
-        <p>Fundamentals of Information Security [Infosys | Springboard]</p>
+    <div class="resume-container">
+        <div class="header">
+            <h1>Mallikarjun Malli</h1>
+            <p class="title">Developer Intern | Full Stack Enthusiast</p>
+            <div class="contact-info">
+                <span>📧 mallikarjunmalli.work@gmail.com</span>
+                <span>🌐 github.com/manju766</span>
+                <span>📍 Hubli, Karnataka</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🎓 Education</h3>
+            <div class="education-item">
+                <h4>Bachelor of Computer Application (BCA)</h4>
+                <div class="education-details">
+                    KLE Technological University, Hubli<br>
+                    <strong>Duration:</strong> 2023 - 2026<br>
+                    <strong>CGPA:</strong> <span class="grade">7.4/10</span>
+                </div>
+            </div>
+            <div class="education-item">
+                <h4>Pre-University Course (PUC)</h4>
+                <div class="education-details">
+                    IBMR College of Commerce, Hubli<br>
+                    <strong>Duration:</strong> 2021 - 2023<br>
+                    <strong>Percentage:</strong> <span class="grade">75%</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>💻 Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <p>Basics of Java (Core), JavaScript, C++, Python </p>
+                </div>
+                <div class="skill-category">
+                    <h4>Web Development</h4>
+                    <p>HTML5, CSS3, React.js (Basics), Bootstrap</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Database Management</h4>
+                    <p> Basics of MySQL, MongoDB </p>
+                </div>
+                <div class="skill-category">
+                    <h4>Development Tools</h4>
+                    <p>VS Code, Render, Postman, Git & GitHub</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🚀 Projects</h3>
+            <div class="project-item">
+                <h4>Job Description Matcher</h4>
+                <div class="project-details">
+                    <strong>Technologies:</strong> FastAPI, Python, Machine Learning, NLP, HTML, CSS, Bootstrap, JavaScript<br>
+                    <strong>Description:</strong> AI-powered job matching system that analyzes job descriptions and candidate profiles using Natural Language Processing to provide intelligent job recommendations and compatibility scores.
+                </div>
+            </div>
+            <div class="project-item">
+                <h4>Course Selling Web Application</h4>
+                <div class="project-details">
+                    <strong>Technologies:</strong> MERN Stack (MongoDB, Express.js, React.js, Node.js)<br>
+                    <strong>Description:</strong> Full-stack e-learning platform with user authentication, course management, payment integration, and progress tracking for both instructors and students.
+                </div>
+            </div>
+            <div class="project-item">
+                <h4>Personal Portfolio Website</h4>
+                <div class="project-details">
+                    <strong>Technologies:</strong> HTML5, CSS3, JavaScript, EmailJS, Responsive Design<br>
+                    <strong>Description:</strong> Modern, responsive portfolio website featuring dark/light themes, smooth animations, contact form integration, and optimized performance across all devices.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🏆 Certifications</h3>
+            <div class="certification">
+                <strong>Fundamentals of Information Security</strong><br>
+                <em>Infosys | Springboard</em>
+            </div>
+        </div>
     </div>
 </body>
 </html>
