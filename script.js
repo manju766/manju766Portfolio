@@ -191,9 +191,9 @@ window.addEventListener('scroll', () => {
 (function() {
    
     const emailConfig = {
-        publicKey: "PUBLIC_KEY",    
-        serviceId: "SERVICE_ID",    
-        templateId: "TEMPLATE_ID"   
+        publicKey: "9DWcSnrFKO1l3j9L0",    
+        serviceId: "service_jxfofnk",    
+        templateId: "template_91mz7fq"   
     };
     
     emailjs.init(emailConfig.publicKey);
